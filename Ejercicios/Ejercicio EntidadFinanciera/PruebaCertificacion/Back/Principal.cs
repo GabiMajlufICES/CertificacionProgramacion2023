@@ -16,12 +16,6 @@ namespace Back
             baseDatos.SaveChanges();
         }
 
-        public void AgregarCliente(Cliente cliente)
-        {
-            baseDatos.Clientes.Add(cliente);
-            baseDatos.SaveChanges();
-        }
-
         public void AgregarCuentaBancaria(string tipo, int idCliente)
         {
             CuentaBancaria cuentaBancaria = new CuentaBancaria();

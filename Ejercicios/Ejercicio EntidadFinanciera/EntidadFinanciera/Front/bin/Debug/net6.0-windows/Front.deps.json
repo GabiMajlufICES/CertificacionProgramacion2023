@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Front/1.0.0": {
         "dependencies": {
+          "Back": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.12",
           "Microsoft.EntityFrameworkCore.Design": "7.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12"
@@ -555,6 +556,15 @@
         "dependencies": {
           "System.Drawing.Common": "6.0.0"
         }
+      },
+      "Back/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12"
+        },
+        "runtime": {
+          "Back.dll": {}
+        }
       }
     }
   },
@@ -976,6 +986,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Back/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

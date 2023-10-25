@@ -60,3 +60,5 @@ C:\Users\Gabri\source\repos\EntidadFinanciera\Front\obj\Debug\net6.0-windows\ref
 C:\Users\Gabri\source\repos\EntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.pdb
 C:\Users\Gabri\source\repos\EntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.genruntimeconfig.cache
 C:\Users\Gabri\source\repos\EntidadFinanciera\Front\obj\Debug\net6.0-windows\ref\Front.dll
+C:\Users\Gabri\source\repos\EntidadFinanciera\Front\bin\Debug\net6.0-windows\Back.dll
+C:\Users\Gabri\source\repos\EntidadFinanciera\Front\bin\Debug\net6.0-windows\Back.pdb

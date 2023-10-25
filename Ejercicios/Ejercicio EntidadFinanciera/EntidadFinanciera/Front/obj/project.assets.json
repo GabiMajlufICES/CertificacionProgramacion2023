@@ -1048,6 +1048,20 @@
             "rid": "win"
           }
         }
+      },
+      "Back/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12"
+        },
+        "compile": {
+          "bin/placeholder/Back.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Back.dll": {}
+        }
       }
     }
   },
@@ -2845,10 +2859,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Back/1.0.0": {
+      "type": "project",
+      "path": "../Back/Back.csproj",
+      "msbuildProject": "../Back/Back.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Back >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.12"
@@ -2860,11 +2880,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabri\\source\\repos\\EntidadFinanciera\\Front\\Front.csproj",
+      "projectUniqueName": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Front\\Front.csproj",
       "projectName": "Front",
-      "projectPath": "C:\\Users\\Gabri\\source\\repos\\EntidadFinanciera\\Front\\Front.csproj",
+      "projectPath": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Front\\Front.csproj",
       "packagesPath": "C:\\Users\\Gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabri\\source\\repos\\EntidadFinanciera\\Front\\obj\\",
+      "outputPath": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Front\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2880,7 +2900,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Back\\Back.csproj": {
+              "projectPath": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Back\\Back.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

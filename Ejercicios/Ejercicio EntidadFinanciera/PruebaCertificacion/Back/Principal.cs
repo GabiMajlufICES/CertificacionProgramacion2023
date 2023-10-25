@@ -8,7 +8,7 @@ namespace Back
 {
     public class Principal
     {
-        BaseDatos baseDatos = new BaseDatos();
+        public BaseDatos baseDatos = new BaseDatos();
 
         public void AgregarProducto(Producto producto) 
         { 
@@ -16,11 +16,11 @@ namespace Back
             baseDatos.SaveChanges();
         }
 
-        public void AgregarCuentaBancaria(string tipo, int idCliente)
+        public string AgregarCuentaBancaria(string tipo, int dniCliente)
         {
+            var clienteEncontrado = baseDatos.Clientes.FirstOrDefault(x => x.dni == dniCliente);
             CuentaBancaria cuentaBancaria = new CuentaBancaria();
-
-            var clienteEncontrado = baseDatos.Clientes.Find(idCliente);
+          
                        
             if (clienteEncontrado != null)
             {
@@ -40,9 +40,21 @@ namespace Back
                 }
                 cuentaBancaria.nroCuenta = long.Parse(nroCuenta);
 
-                baseDatos.CuentasBancarias.Add(cuentaBancaria);
-                baseDatos.SaveChanges();
-            }                
+                var cuentaBancariaEncontrada = baseDatos.CuentasBancarias.FirstOrDefault(x => x.nroCuenta == cuentaBancaria.nroCuenta);
+
+                if (cuentaBancariaEncontrada == null)
+                {
+                    baseDatos.CuentasBancarias.Add(cuentaBancaria);
+                    baseDatos.SaveChanges();
+                    return "Cuenta agregada con exito";
+                }
+                else
+                {
+                    return "La cuenta ya existe";
+                }
+            }
+            return "Cliente no encontrado";
+                    
         }
 
     }

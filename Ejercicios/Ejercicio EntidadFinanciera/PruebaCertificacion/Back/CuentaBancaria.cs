@@ -13,6 +13,8 @@ namespace Back
         public float saldo { get; set; }
         public string tipo { get; set; }//Cuenta Corriente o Ahorro
 
+         //public Enum tipoCuenta { Ahorro, Corriente}
+
         public Cliente clienteCuentaBancaria { get; set; }
 
     }

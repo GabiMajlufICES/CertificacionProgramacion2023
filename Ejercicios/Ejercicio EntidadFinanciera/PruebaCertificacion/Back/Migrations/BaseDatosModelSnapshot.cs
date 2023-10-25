@@ -33,6 +33,9 @@ namespace Back.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("dni")
+                        .HasColumnType("int");
+
                     b.Property<string>("nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -40,6 +43,34 @@ namespace Back.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Clientes");
+                });
+
+            modelBuilder.Entity("Back.CuentaBancaria", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<int>("clienteCuentaBancariaid")
+                        .HasColumnType("int");
+
+                    b.Property<long>("nroCuenta")
+                        .HasColumnType("bigint");
+
+                    b.Property<float>("saldo")
+                        .HasColumnType("real");
+
+                    b.Property<string>("tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("clienteCuentaBancariaid");
+
+                    b.ToTable("CuentasBancarias");
                 });
 
             modelBuilder.Entity("Back.Producto", b =>
@@ -85,6 +116,17 @@ namespace Back.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Proveedores");
+                });
+
+            modelBuilder.Entity("Back.CuentaBancaria", b =>
+                {
+                    b.HasOne("Back.Cliente", "clienteCuentaBancaria")
+                        .WithMany()
+                        .HasForeignKey("clienteCuentaBancariaid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("clienteCuentaBancaria");
                 });
 #pragma warning restore 612, 618
         }

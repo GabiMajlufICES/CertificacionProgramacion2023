@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabri\\source\\repos\\EntidadFinanciera\\Back\\Back.csproj": {}
+    "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Back\\Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabri\\source\\repos\\EntidadFinanciera\\Back\\Back.csproj": {
+    "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabri\\source\\repos\\EntidadFinanciera\\Back\\Back.csproj",
+        "projectUniqueName": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Back\\Back.csproj",
         "projectName": "Back",
-        "projectPath": "C:\\Users\\Gabri\\source\\repos\\EntidadFinanciera\\Back\\Back.csproj",
+        "projectPath": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Back\\Back.csproj",
         "packagesPath": "C:\\Users\\Gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabri\\source\\repos\\EntidadFinanciera\\Back\\obj\\",
+        "outputPath": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\CertificacionProgramacion2023\\Ejercicios\\Ejercicio EntidadFinanciera\\EntidadFinanciera\\Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",

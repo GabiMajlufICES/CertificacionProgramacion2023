@@ -12,5 +12,6 @@ namespace Back
         public int dni { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
+        //public CuentaBancaria cuentaBancariaCliente { get; set; }
     }
 }
